@@ -1,0 +1,101 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  padding: 5%;
+}
+
+
+.profile {
+  display: flex;
+  justify-content: center;
+
+  &-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+
+  &-info {
+    margin-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__name {
+      font-size: 26px;
+
+    }
+    &__followers,&__genres {
+      font-size: 18px;
+    }
+  }
+}
+
+.gallery {
+  .track {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    &-img {
+      width: 220px;
+      height: 220px;
+      border: solid 3px #fff;
+      border-radius: 3px;
+      object-fit: cover;
+      position: absolute;
+    }
+    &-text {
+      background-color: #000;
+      color: #fff;
+      opacity: .75;
+      width: 220px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+    }
+    &-play {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      &-inner {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        background-color: #000;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        color: #fff;
+        padding-top: 13px;
+        margin: 80px 0 0 80px;
+        opacity: 0;
+        &:hover {
+          opacity: 0.8;
+          animation-name: fade-in;
+          animation-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
