@@ -1,7 +1,17 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+countdown-champ/node_modules
+goal-coach/node_modules
+music-master/node_modules
+reminder-pro/node_modules
+
+
+countdown-champ/package-lock.json
+goal-coach/package-lock.json
+music-master/package-lock.json
+reminder-pro/package-lock.json
+
 
 # testing
 /coverage
